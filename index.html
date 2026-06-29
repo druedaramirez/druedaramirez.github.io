@@ -1450,6 +1450,29 @@
                 <article class="experience-card">
                     <div class="exp-card-header">
                         <div class="exp-company-role">
+                            <div class="exp-company">Enotrium Syndicate | Hybrid</div>
+                            <div class="exp-role">Strategy & Acquisitions Intern</div>
+                        </div>
+                        <div class="exp-date">Jun 2026 – Present</div>
+                    </div>
+                    <p class="exp-intro">Enotrium is an early-stage deep tech company developing proprietary edge AI and neuromorphic computing infrastructure for deployment in autonomous systems, drone platforms, and industrial manufacturing environments. As Strategy & Acquisition Intern, I translate highly technical AI and hardware capabilities into structured business proposals for clients and investors, sitting at the intersection of frontier AI research and strategic communications.</p>
+                    <ul class="exp-bullets">
+                        <li>Synthesize complex technical concepts across edge AI, neuromorphic computing, and autonomous systems into structured business proposals targeting defense, industrial, and investor audiences</li>
+                        <li>Translate cutting-edge hardware AI capabilities into compelling value propositions for client and investor acquisition across defense and industrial verticals</li>
+                        <li>Support cross-functional documentation efforts bridging technical implementation and strategic business communication for drone, autonomous systems, and manufacturing deployment contexts</li>
+                        <li>Collaborate with ML researchers and embedded engineers to develop client-facing materials communicating the strategic value of proprietary AI infrastructure</li>
+                    </ul>
+                    <div class="project-tags">
+                        <span class="tag">Technical Writing</span>
+                        <span class="tag">Business Proposal Development</span>
+                        <span class="tag">Technical Documentation</span>
+                        <span class="tag">Defense Technology</span>
+                        <span class="tag">Strategic Communications</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="exp-card-header">
+                        <div class="exp-company-role">
                             <div class="exp-company">Verso Ministries | Notre Dame, IN</div>
                             <div class="exp-role">Operations Intern</div>
                         </div>
@@ -1465,7 +1488,7 @@
                     </ul>
                     <div class="project-tags">
                         <span class="tag">Python</span>
-                        <span class="tag">Google AppsScript</span>
+                        <span class="tag">Google Apps Script</span>
                         <span class="tag">Web Scraping</span>
                         <span class="tag">Workflow Optimization</span>
                         <span class="tag">HubSpot CRM</span>
@@ -1612,7 +1635,7 @@
                 <!-- Project 2: FlightSense -->
                 <article class="project-card">
                     <div class="project-title-row">
-                        <div class="project-title">FlightSense: Flight Tracking &amp; Delay Intelligence Platform</div>
+                        <div class="project-title">FlightSense: Flight Price Tracking &amp; Prediction Platform</div>
                         <span class="tag tag-in-development">In Development</span>
                     </div>
 
@@ -1620,13 +1643,22 @@
                     <p class="project-section-content">A solo full-stack personal project built to help travelers book flights at their price floor. FlightSense is a Python-based flight tracking platform with a live data pipeline, persistent database, and an interactive user dashboard. Currently in active development with a machine learning delay prediction layer and automated email notifications planned as next phases.</p>
 
                     <div class="project-section-label">Problem</div>
-                    <p class="project-section-content">Travelers currently rely on their own methods for predicting flight prices, which are constantly fluctuating. Additionally, those managing multiple upcoming flights across different itineraries have no centralized, automatically-updating tool that aggregates their flight data in one place. This lack of visibility makes it difficult for travelers book more affordable flights and manage their travel plans effectively.</p>
+                    <p class="project-section-content">Travelers currently rely on their own methods for predicting flight prices, which are constantly fluctuating. Additionally, those managing multiple upcoming flights across different itineraries have no centralized, automatically-updating tool that aggregates their flight data in one place. This lack of visibility makes it difficult for travelers book more affordable flights and manage their travel plans effectively.
 
+                    Beyond the personal inconvenience, this problem has broader economic implications. Airlines use dynamic pricing algorithms to maximize revenue, which can lead to price volatility and unpredictability for consumers. By providing a tool that helps travelers identify price floors and manage their itineraries, FlightSense aims to empower consumers to make more informed decisions, potentially leading to more competitive pricing in the airline industry overall. 
+
+                    Finally, while a few existing datasets track flight prices, they only record one price for flight. This is insufficient for predicting price floors, which requires a time series of prices for each flight. This project addresses this gap by scraping and storing three price points per day for each flight, starting 180 days before departure, enabling more accurate predictions of when a flight is likely to be priced at its floor.
+                    </p>
+z
                     <div class="project-section-label">Approach</div>
-                    <p class="project-section-content">Built a full-stack application in Python with embedded HTML for the user interface. Implemented a dual-source flight data scraping pipeline using fast-flights as the primary source and SerpAPI as a fallback, with flights refreshing automatically every few hours. All flight data is stored and managed in a PostgreSQL database. The user interface allows travelers to create trips, add flights to each trip, and view a live dashboard tracking the status of all upcoming flights across all itineraries. A machine learning model will be used to predict when a flight is likely to be priced at its floor, and an automated email notification system will be implemented to alert users when their flight is predicted to be at its price floor.</p>
+                    <p class="project-section-content">Built a full-stack application in Python with embedded HTML for the user interface. Implemented a dual-source flight data scraping pipeline using fast-flights as the primary source and SerpAPI as a fallback, with flights refreshing automatically every few hours. All flight data is stored and managed in a PostgreSQL database. The user interface allows travelers to create trips, add flights to each trip, and view a live dashboard tracking the status of all upcoming flights across all itineraries. 
+                        
+                    Currently, an automated pipeline using the same logic as FlightSense is collecting real-world pricing data eight times per day, across 1,241 combinations of 325 unique airports across the globe. Each airport pair simultaneously tracks four fixed departure dates spread across different seasons, producing a continuous time-series where the key feature — days to departure — decreases naturally from ~180 days to 0, capturing the full pricing arc without artificial bucketing. The dataset achieves broad representational coverage across four distance bands (short, medium, long, and ultra-long-haul), seven geographic regions, and includes rich connection-aware features such as hub tier classification, corridor efficiency scores, and layover quality metrics for the 70+ known global connection hubs. At current collection velocity, the pipeline accumulates sufficient labeled training examples within 60-90 days to train an XGBoost price floor prediction model targeting ≥70% precision on "buy now" signals — the core output that drives FlightSense's booking alert engine.
+                    
+                    Once data collection and the XGBoost model are complete, the model and an automated email notification system will be implemented to alert users when their flight is predicted to be at its price floor. Once the first iteration is running, the model will be enhanced to update based on live data.</p>
 
                     <div class="project-section-label">Current Status &amp; Roadmap</div>
-                    <p class="project-section-content"><strong>Phase 1 (almost complete):</strong> Live flight tracking dashboard with PostgreSQL-backed data pipeline and automatic refresh.<br><strong>Phase 2 (planned):</strong> Machine learning delay prediction model trained on historical BTS flight delay data to flag high-risk flights before departure.<br><strong>Phase 3 (planned):</strong> Automated email notification system to alert users when a tracked flight crosses a delay risk threshold.</p>
+                    <p class="project-section-content"><strong>Phase 1 (Complete):</strong> Live flight tracking dashboard with PostgreSQL-backed data pipeline and automatic refresh.<br><strong>Phase 2 (In Progress):</strong> Automated data collection for machine learning.<br><strong>Phase 3 (Planned):</strong> Machine learning delay prediction model trained on recent flight price data from 325 airports worldwide.<br><strong>Phase 3 (planned):</strong> Automated email notification system to alert users when a tracked flight is predicted to reach its floor.</p>
 
                     <div class="project-tags">
                         <span class="tag">Python</span>
