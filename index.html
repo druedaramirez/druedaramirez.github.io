@@ -1687,7 +1687,46 @@ z
                     </div>
                 </article>
 
-                <!-- Project 4: Delta Airlines Dashboard -->
+                <!-- Project 4: TaskFlow -->
+                <article class="project-card">
+                    <div class="project-title">TaskFlow: Cross-Platform Desktop Productivity Application</div>
+
+                    <div class="project-section-label">Context</div>
+                    <p class="project-section-content">A solo-designed personal productivity application built for myself to manage the competing demands of coursework, music direction, multiple internships, and personal projects. Designed from scratch and built iteratively from a Python prototype into a modern cross-language desktop app with a TypeScript/React frontend running inside a Rust/Tauri shell, with all data persisted locally in SQLite.</p>
+
+                    <div class="project-section-label">Problem</div>
+                    <p class="project-section-content">Existing task management tools lack integrated calendar blocking, offline-first data persistence, and the flexibility required to manage tasks across multiple concurrent commitments. The goal was to design and build a single native Windows application combining a rich task model, Google Calendar integration, and a cohesive dark data-analytics aesthetic tailored to my own workflow.</p>
+
+                    <div class="project-section-label">Approach</div>
+                    <p class="project-section-content">Designed and architected a cross-language desktop application with TypeScript/React UI communicating with a Rust backend over Tauri IPC. Implemented Google Calendar OAuth2 with a Rust-side loopback TCP listener capturing the auth redirect. Designed a versioned SQLite schema (v1 to v5 migrations) supporting multi-level task subgroups stored as JSON paths and RFC 5545 RRULE recurrence generation. Routed Google Places API calls through Tauri's HTTP plugin to bypass WebView CORS restrictions, with automatic OpenStreetMap Nominatim fallback. Packaged with an NSIS Windows installer and custom icon generation pipeline.</p>
+
+                    <div class="project-section-label">Key Findings & Recommendation</div>
+                    <p class="project-section-content">Delivered a fully functional native Windows desktop application with offline-first SQLite persistence, live Google Calendar sync with graceful fallback, RFC 5545 recurring task generation with Google Calendar-style edit scope, multi-level subgroup architecture, advanced filtering with removable filter pills, bulk task management, and a cohesive dark UI design system — demonstrating end-to-end product design and cross-language development from architecture through packaging and deployment.</p>
+
+                    <div class="project-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Rust</span>
+                        <span class="tag">Tauri</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">OAuth2</span>
+                        <span class="tag">Google Calendar API</span>
+                        <span class="tag">REST API Integration</span>
+                        <span class="tag">Desktop App Development</span>
+                        <span class="tag">Local-First Architecture</span>
+                        <span class="tag">Windows Packaging</span>
+                        <span class="tag">TanStack Query</span>
+                        <span class="tag">Framer Motion</span>
+                        <span class="tag">Product Design</span>
+                        <span class="tag">AI-Augmented Development</span>
+                    </div>
+
+                    <div class="project-downloads">
+                        <a href="assets/TaskFlow-Dashboard.png" target="_blank" rel="noreferrer" class="project-download-btn" onclick="gtag('event', 'click', {'event_category': 'project', 'event_label': 'TaskFlow Dashboard Image'});"><i class="bi bi-image"></i> View Dashboard Image</a>
+                    </div>
+                </article>
+
+                <!-- Project 5: Delta Airlines Dashboard -->
                 <article class="project-card">
                     <div class="project-title">Delta Airlines Flight Delay Performance Dashboard</div>
                     
@@ -1744,6 +1783,10 @@ z
                         <span class="tag">Streamlit</span>
                         <span class="tag">ggplot2</span>
                         <span class="tag">HTML</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Rust</span>
+                        <span class="tag">Tauri</span>
                         <span class="tag">GitHub</span>
                     </div>
                 </div>
@@ -1758,6 +1801,9 @@ z
                         <span class="tag">GitHub Copilot</span>
                         <span class="tag">Google AppsScript</span>
                         <span class="tag">NotebookLM</span>
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Desktop App Development</span>
+                        <span class="tag">Windows Packaging</span>
                     </div>
                 </div>
 
