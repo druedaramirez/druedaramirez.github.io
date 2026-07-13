@@ -1626,7 +1626,6 @@
 
                     Finally, while a few existing datasets track flight prices, they only record one price for flight. This is insufficient for predicting price floors, which requires a time series of prices for each flight. This project addresses this gap by scraping and storing three price points per day for each flight, starting 180 days before departure, enabling more accurate predictions of when a flight is likely to be priced at its floor.
                     </p>
-z
                     <div class="project-section-label">Approach</div>
                     <p class="project-section-content">Built a full-stack application in Python with embedded HTML for the user interface. Implemented a dual-source flight data scraping pipeline using fast-flights as the primary source and SerpAPI as a fallback, with flights refreshing automatically every few hours. All flight data is stored and managed in a PostgreSQL database. The user interface allows travelers to create trips, add flights to each trip, and view a live dashboard tracking the status of all upcoming flights across all itineraries. 
                         
