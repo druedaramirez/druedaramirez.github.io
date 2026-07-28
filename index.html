@@ -1689,21 +1689,21 @@
                 <!-- Project 4: TaskFlow -->
                 <article class="project-card">
                     <div class="project-title-row">
-                        <div class="project-title">TaskFlow: Cross-Platform Desktop Productivity Application</div>
+                        <div class="project-title">TaskFlow: Cross-Platform Personal Productivity System</div>
                         <span class="tag tag-in-development">In Development</span>
                     </div>
 
                     <div class="project-section-label">Context</div>
-                    <p class="project-section-content">A solo-designed personal productivity application built for myself to manage the competing demands of coursework, music direction, internships, job applications,and personal projects. Designed from scratch and built iteratively from a Python prototype into a modern cross-language desktop app with a TypeScript/React frontend running inside a Rust/Tauri shell, with all data persisted locally in SQLite.</p>
+                    <p class="project-section-content">A solo-designed, iteratively developed native desktop productivity application built for myself to unify task management, goal tracking, project planning, habit monitoring, and personal analytics into a single cohesive system. Architected from scratch and rebuilt from a Python/CustomTkinter prototype into a production-grade cross-language desktop app — TypeScript/React frontend running inside a Rust/Tauri shell, with all data persisted locally in SQLite.</p>
 
                     <div class="project-section-label">Problem</div>
-                    <p class="project-section-content">Existing task management tools lack integrated calendar blocking, offline-first data persistence, and the flexibility required to manage tasks across multiple concurrent commitments. The goal was to design and build a single native Windows application combining a rich task model, Google Calendar integration, and cards for each kind of commitment, ensuring more efficient and comprehensive organization and task managment.</p>
+                    <p class="project-section-content">Most productivity tools treat tasks, habits, projects, and wellbeing as separate, disconnected concerns. The goal was to design a system that models them as interconnected data feeding a unified scoring and analytics engine — giving a genuine, data-driven picture of how day-to-day execution accumulates over time, with enough flexibility to handle the competing demands of coursework, music direction, multiple internships, and personal projects simultaneously.</p>
 
                     <div class="project-section-label">Approach</div>
-                    <p class="project-section-content">Designed and architected a cross-language desktop application with TypeScript/React UI communicating with a Rust backend over Tauri IPC. Implemented Google Calendar OAuth2 with a Rust-side loopback TCP listener capturing the auth redirect. Designed a versioned SQLite schema (v1 to v5 migrations) supporting multi-level task subgroups stored as JSON paths and RFC 5545 RRULE recurrence generation. Routed Google Places API calls through Tauri's HTTP plugin to bypass WebView CORS restrictions, with automatic OpenStreetMap Nominatim fallback. Packaged with an NSIS Windows installer and custom icon generation pipeline.</p>
+                    <p class="project-section-content">Designed and architected a cross-language desktop application with TypeScript/React UI communicating with a Rust backend over Tauri IPC — chosen over Electron for smaller binary size, lower memory footprint, and native OS-level filesystem access. Implemented Google Calendar OAuth2 with a Rust-side loopback TCP listener, Google Places API with automatic OpenStreetMap Nominatim fallback for resilience, and rich text editing via Tiptap. Designed a versioned SQLite schema supporting multi-level task subgroups as JSON paths, RFC 5545 RRULE recurrence generation with scope-aware editing, and a carry-forward scoring engine that computes rolling daily averages across tasks, habits, routines, and happiness data. Packaged with an NSIS Windows installer and custom icon generation pipeline.</p>
 
-                    <div class="project-section-label">Project Outcome and Next Steps</div>
-                    <p class="project-section-content">Delivered a fully functional native Windows desktop application with offline-first SQLite persistence, live Google Calendar sync with graceful fallback, RFC 5545 recurring task generation with Google Calendar-style edit scope, multi-level subgroup architecture, advanced filtering with removable filter pills, bulk task management, and a cohesive dark UI design system, demonstrating end-to-end product design and cross-language development from architecture through packaging and deployment. Beyond the tasks page, I plan to build a page to house my personal projects detailed on this website, as well as goal tracking features and dashboards to visualize my progress over time.</p>
+                    <div class="project-section-label">Key Findings &amp; Recommendation</div>
+                    <p class="project-section-content">Delivered five interconnected modules — a Tasks workspace with Google Calendar day view, drag-and-drop reordering, multi-level nested subgroups, deferred visibility, and native desktop notifications; a Goals module with RRULE-based habit tracking, reorderable routines, and daily happiness scoring with 7-day and 30-day trend views; a Projects layer with hierarchical Section to Milestone to Checkpoint structure, rich text documentation via Tiptap, and full task behavioral parity; and a gamified Dashboard with a five-tier leveling system, composite scoring engine rewarding execution quality over quantity, a full-year activity heatmap, and a scatter chart correlating happiness scores against productivity. Shared interaction primitives built once and reused across all modules to eliminate cognitive load and code duplication.</p>
 
                     <div class="project-tags">
                         <span class="tag">TypeScript</span>
@@ -1719,7 +1719,9 @@
                         <span class="tag">Windows Packaging</span>
                         <span class="tag">TanStack Query</span>
                         <span class="tag">Framer Motion</span>
+                        <span class="tag">Tiptap</span>
                         <span class="tag">Product Design</span>
+                        <span class="tag">UX Design</span>
                         <span class="tag">AI-Augmented Development</span>
                     </div>
 
