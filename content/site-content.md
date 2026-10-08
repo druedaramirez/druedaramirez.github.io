@@ -97,7 +97,7 @@ Newest first.
 - Location: South Bend, IN
 - Role: Pilgrim Support Intern
 - Dates: Aug 2026 - Present
-- Intro: Verso Ministries organizes Catholic pilgrimages for 1,000+ global travelers, with various standard and custom itineraries across five continents, coordinating trip logistics on behalf of trip leaders with Destination Management Companies. As a pilgrim support intern, I serve as a point of contact for travelers throughout their trip, resolving portal and documentation questions for non-technical users while building the automated tracking that keeps more than 2,100 pilgrims' passports, flights, and payments on schedule.
+- Intro: Verso Ministries organizes Catholic pilgrimages for 1,000+ global travelers, with various standard and custom itineraries across five continents, coordinating trip logistics on behalf of trip leaders with Destination Management Companies. As a pilgrim support intern, I operate on the traveler-facing side of the business, ensuring task compliance while building the automated tracking that keeps more than 2,100 pilgrims' passports, flights, and payments on schedule.
 - Bullets:
   - Architected an automated pipeline for tracking task completion for over 2,100 customers using APIs and Google Apps Script
   - Provide technical support to clients navigating trip portal software, achieving an 86% satisfaction score by simplifying digital processes for non-technical users
