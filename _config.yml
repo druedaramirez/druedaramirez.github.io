@@ -1,0 +1,8 @@
+# GitHub Pages build settings.
+# Keep working documents out of the published site. They stay in the repository;
+# they are just not served at druedaramirez.github.io.
+exclude:
+  - README.md
+  - CLAUDE.md
+  - docs
+  - content
