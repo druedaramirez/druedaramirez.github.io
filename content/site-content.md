@@ -94,12 +94,12 @@ Newest first.
 
 ### Verso Ministries
 
-- Location: South Bend, IN
-- Role: Pilgrim Support Intern
+- Location: Notre Dame, IN
+- Role: Customer Support Intern
 - Dates: Aug 2026 - Present
 - Intro: Verso Ministries organizes Catholic pilgrimages for 1,000+ global travelers, with various standard and custom itineraries across five continents, coordinating trip logistics on behalf of trip leaders with Destination Management Companies. As a pilgrim support intern, I operate on the traveler-facing side of the business, ensuring task compliance while building the automated tracking that keeps more than 2,100 pilgrims' passports, flights, and payments on schedule.
 - Bullets:
-  - Architected an automated pipeline for tracking task completion for over 2,100 customers using APIs and Google Apps Script
+  - Architected an automated pipeline for tracking task completion for over 2,100 customers using APIs, Google Apps Script, and Claude Code
   - Provide technical support to clients navigating trip portal software, achieving an 86% satisfaction score by simplifying digital processes for non-technical users
   - Maintain detailed customer interaction records to support departmental logistics and process improvement
   - Serve as a point of contact for pilgrim inquiries, delivering personalized support across the client lifecycle
@@ -125,8 +125,8 @@ Newest first.
 - Dates: Aug 2025 - May 2026
 - Intro: Verso Ministries organizes Catholic pilgrimages for 1,000+ global travelers, with various standard and custom itineraries across five continents, coordinating trip logistics on behalf of trip leaders with Destination Management Companies. As an operations intern, I sit at the intersection of data infrastructure, process optimization, and client-facing logistics, building the systems that keep complex international travel operations running reliably.
 - Bullets:
-  - Engineered a data-driven market entry strategy into the African continent by scraping, cleaning, and benchmarking DMC service offerings across the region, driving informed decision-making for new business partnerships and widening the company's global footprint
-  - Synthesized 10 years of disparate customer data from multiple sources using Python for a targeted outreach strategy, driving a personalized approach to customer engagement and retention
+  - Engineered a data-driven market entry strategy into the African continent by scraping, cleaning, and benchmarking DMC service offerings through an AI screening and human revision process, driving informed decision-making for new business partnerships and widening the company's global footprint
+  - Synthesized 10 years of disparate customer data from multiple sources using Python to build a targeted outreach strategy, driving a personalized approach to customer engagement and retention
   - Identified critical friction points in documentation workflows, automating manual processes using spreadsheet functions, backend JavaScript, and Google Gemini to engineer SOPs that reduced documentation time by 20% across 100+ trip offerings
   - Maintained a 100% ticket resolution rate in HubSpot CRM within a 24-hour SLA across all customer inquiries
   - Managed sensitive datasets integrating traveler flight, health, and passport information for international DMCs, ensuring data integrity across a high-stakes, compliance-sensitive operation
@@ -140,8 +140,8 @@ Newest first.
 - Intro: Embedded within a boutique Bethesda hedge fund for a two-month engagement, I built data infrastructure and research pipelines to inform investment decisions for senior staff. The role was fast-paced and output-driven, with findings presented directly to investment leadership within days of completion.
 - Bullets:
   - Synthesized complex market and industry research into executive-ready intelligence, delivering findings directly to senior investment leadership to inform high-stakes portfolio decision-making
-  - Developed Python scripts to scrape and process bulk financial data at scale, storing structured results in MongoDB to automate and accelerate the firm’s decision-making pipeline
-  - Architected web-scraping tools to systematically extract critical metadata from financial news sources and industry publications, dramatically reducing the time required to surface accurate market intelligence
+  - Developed Python scripts with Claude Code to scrape and process bulk financial data at scale, storing structured results in MongoDB to automate and accelerate the firm’s decision-making pipeline
+  - Architected web-scraping tools with Claude Code to systematically extract critical metadata from financial news sources and industry publications, dramatically reducing the time required to surface accurate market intelligence
 - Tags: Python, MongoDB, Web Scraping, Market Research, Executive Communication
 
 ### Dietrich Logistics
@@ -155,6 +155,17 @@ Newest first.
   - Logged and audited 80+ international shipping transactions within the company’s ERP system, ensuring high data accuracy across cross-border financial records
   - Revised the company’s account plan and streamlined international record-keeping workflows, improving organizational efficiency across the accounting function
 - Tags: ERP Systems, Excel, Market Research, Spanish
+
+### Saint Raphael Catholic Church
+
+- Location: Rockville, MD
+- Role: Music Director
+- Dates: May - Jul 2024
+- Bullets:
+  - Directed and trained a high school choir and instrumentalists for weekly Masses
+  - Successfully introduced new songs every week for this youth ensemble
+  - Ensured optimal sound quality by operating and mixing sound systems for Masses
+- Tags: Team Leadership, Communication
 
 ## Education
 
