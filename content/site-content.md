@@ -91,7 +91,6 @@ Newest first.
 - Tags: Skill one, Skill two, Tool one
 ```
 
-
 ### Verso Ministries
 
 - Location: Notre Dame, IN
@@ -399,7 +398,7 @@ The two `Coursework` lines are optional; delete both to leave coursework off a c
 - Links:
   - danielrr0713@gmail.com -> mailto:danielrr0713@gmail.com
   - +1 240-401-0249 -> tel:+12404010249
-  - LinkedIn -> https://www.linkedin.com/in/daniel-rueda-ramirez-8a2963265/
+  - LinkedIn -> https://linkedin.com/in/druedaramirez
   - GitHub -> https://github.com/druedaramirez
 - Resume button label: Download Resume
 - Resume file: assets/Daniel Rueda-Ramirez_Resume.pdf
